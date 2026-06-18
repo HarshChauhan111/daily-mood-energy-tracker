@@ -1,0 +1,35 @@
+.filterBar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filterChip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 1.5px solid var(--color-line-strong);
+  background: var(--color-paper-raised);
+  color: var(--color-ink-soft);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.filterChip:hover {
+  border-color: var(--mood-color, var(--color-accent));
+}
+
+.filterChipActive {
+  background: var(--mood-color, var(--color-ink));
+  border-color: var(--mood-color, var(--color-ink));
+  color: #fff;
+}
+
+.filterCount {
+  font-size: 11px;
+  opacity: 0.85;
+}

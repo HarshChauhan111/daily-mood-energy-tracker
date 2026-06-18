@@ -1,0 +1,212 @@
+.form {
+  background: var(--color-paper-raised);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  box-shadow: var(--shadow-card);
+}
+
+.fieldGroup {
+  margin-bottom: 22px;
+}
+
+.fieldGroup:last-of-type {
+  margin-bottom: 0;
+}
+
+.label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-ink);
+  margin-bottom: 10px;
+}
+
+.labelHint {
+  font-weight: 400;
+  color: var(--color-ink-soft);
+}
+
+.moodOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.moodOption {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1.5px solid var(--color-line-strong);
+  background: var(--color-paper);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-ink-soft);
+  transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease, transform 0.1s ease;
+}
+
+.moodOption:hover {
+  border-color: var(--mood-color, var(--color-accent));
+  color: var(--color-ink);
+}
+
+.moodOption:active {
+  transform: scale(0.97);
+}
+
+.moodOptionSelected {
+  border-color: var(--mood-color, var(--color-accent));
+  background: var(--mood-color, var(--color-accent));
+  color: #fff;
+}
+
+.moodEmoji {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.energyScale {
+  display: flex;
+  gap: 8px;
+}
+
+.energyButton {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 6px 10px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--color-line-strong);
+  background: var(--color-paper);
+  cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease, transform 0.1s ease;
+}
+
+.energyButton:active {
+  transform: scale(0.97);
+}
+
+.energyButtonSelected {
+  border-color: var(--color-accent);
+  background: #fbeee3;
+}
+
+.energyNumber {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.energyWord {
+  font-size: 10px;
+  color: var(--color-ink-soft);
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.textareaWrapper {
+  position: relative;
+}
+
+.textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 78px;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--color-line-strong);
+  background: var(--color-paper);
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--color-ink);
+  line-height: 1.5;
+}
+
+.textarea:focus {
+  border-color: var(--color-accent);
+}
+
+.charCount {
+  position: absolute;
+  bottom: 10px;
+  right: 12px;
+  font-size: 11px;
+  color: var(--color-ink-soft);
+  background: var(--color-paper);
+  padding: 0 4px;
+}
+
+.charCountWarning {
+  color: var(--color-danger);
+  font-weight: 600;
+}
+
+.errorMessage {
+  margin-top: 8px;
+  font-size: 12.5px;
+  color: var(--color-danger);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.submitRow {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.submitButton {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  border: none;
+  padding: 13px 26px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.12s ease, background-color 0.15s ease;
+}
+
+.submitButton:hover {
+  background: var(--color-accent);
+}
+
+.submitButton:active {
+  transform: scale(0.97);
+}
+
+.successNote {
+  font-size: 13px;
+  color: var(--mood-calm);
+  font-weight: 500;
+  opacity: 0;
+  transform: translateY(2px);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.successNoteVisible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 20px;
+  }
+
+  .energyScale {
+    gap: 6px;
+  }
+
+  .energyButton {
+    padding: 10px 2px 8px;
+  }
+}

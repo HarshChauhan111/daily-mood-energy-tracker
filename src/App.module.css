@@ -1,0 +1,137 @@
+.page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.header {
+  margin-bottom: 36px;
+  position: relative;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-ink-soft);
+  margin: 0 0 10px;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0 0 10px;
+  color: var(--color-ink);
+}
+
+.titleAccent {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+.subtitle {
+  font-size: 15px;
+  color: var(--color-ink-soft);
+  margin: 0;
+  max-width: 50ch;
+  line-height: 1.5;
+}
+
+.dateStamp {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--color-ink-soft);
+  border: 1px solid var(--color-line-strong);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  background: var(--color-paper-raised);
+  line-height: 1.4;
+}
+
+.dateStampDay {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.sectionHeading {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 0 0 16px;
+}
+
+.sectionNumber {
+  font-family: var(--font-display);
+  font-size: 13px;
+  color: var(--color-accent);
+  font-style: italic;
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--color-ink);
+}
+
+.searchInput {
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--color-line-strong);
+  background: var(--color-paper-raised);
+  font-size: 14px;
+  font-family: inherit;
+  color: var(--color-ink);
+  box-sizing: border-box;
+}
+
+.searchInput:focus {
+  border-color: var(--color-accent);
+}
+
+.filterRow {
+  margin-bottom: 16px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: var(--color-ink-soft);
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid var(--color-line);
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 32px 16px 64px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .dateStamp {
+    position: static;
+    display: inline-block;
+    margin-top: 14px;
+  }
+}
